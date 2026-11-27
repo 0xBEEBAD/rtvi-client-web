@@ -5,6 +5,87 @@ All notable changes to **Pipecat Client JS** will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.12.0](https://github.com/0xBEEBAD/rtvi-client-web/compare/client-js-v1.18.0...client-js-v1.12.0) (2026-11-27)
+
+
+### Features
+
+* add accessibility-snapshot walker and useA11ySnapshot hook ([12743eb](https://github.com/0xBEEBAD/rtvi-client-web/commit/12743ebf74be929ed64dc3a7fd7e49285c38f494))
+* add bot capabilities and media support ([c4331d5](https://github.com/0xBEEBAD/rtvi-client-web/commit/c4331d5e28b2e43a397ce2c85252af8706d94150))
+* add click command and native &lt;select&gt; support for set_input_value ([3efb560](https://github.com/0xBEEBAD/rtvi-client-web/commit/3efb56010026134be5ae03d458e8e79566a14882))
+* add select_text command and useStandardSelectTextHandler ([1cf2dee](https://github.com/0xBEEBAD/rtvi-client-web/commit/1cf2dee6953ae766d7b486902c9f754c4ae5ffe6))
+* add set_input_value command and useStandardSetInputValueHandler ([2d87593](https://github.com/0xBEEBAD/rtvi-client-web/commit/2d8759357491877b36aa7f4076728266d7700003))
+* add UI agent protocol with UIAgentClient, hooks, and command dispatch ([b6af682](https://github.com/0xBEEBAD/rtvi-client-web/commit/b6af6820a3d3db08c0e244449473d7f85c8d5e27))
+* add UI agent task lifecycle protocol on the client ([62d37de](https://github.com/0xBEEBAD/rtvi-client-web/commit/62d37deab2c35115aefdf0f41d4b9ec79502fb50))
+* **client-js:** add bot capabilities from bot-ready ([6b07067](https://github.com/0xBEEBAD/rtvi-client-web/commit/6b07067de0394d737260118699edb9e5ae92b7e1))
+* **client-js:** add mediaSupport ([ee523f2](https://github.com/0xBEEBAD/rtvi-client-web/commit/ee523f25f74be0ac2884aad7e4af87b96aa28b96))
+* **client-js:** add MediaSupportUpdated event ([0ca12d2](https://github.com/0xBEEBAD/rtvi-client-web/commit/0ca12d27cc2c40aa32a9a516b4c2a1cb1234fbac))
+* **client-js:** add output_type to bot-output and deprecate text_type ([44b648a](https://github.com/0xBEEBAD/rtvi-client-web/commit/44b648ac8fbced8bee8a891d5a68648324dc3c51))
+* **client-js:** add raw text events and deprecate the old text events ([62d49bf](https://github.com/0xBEEBAD/rtvi-client-web/commit/62d49bff4d7212ef70196e230c22b210a3d0ebb8))
+* **client-js:** add screen_in to bot capabilities ([5194493](https://github.com/0xBEEBAD/rtvi-client-web/commit/5194493a712052b6386765711e3cbc643d608e3e))
+* **client-js:** add the bot-interrupted event ([83af5a2](https://github.com/0xBEEBAD/rtvi-client-web/commit/83af5a207364b9aa00767ce15f06fb1fe45b235b))
+* **client-js:** add user-input, bot output text_type and send-text message ids ([079b558](https://github.com/0xBEEBAD/rtvi-client-web/commit/079b55804beca603931e5eac10b9c8af91ec5002))
+* **client-js:** generate the RTVI protocol types from Pipecat's AsyncAPI document ([bec4531](https://github.com/0xBEEBAD/rtvi-client-web/commit/bec45313b6368923b83d9593b636af5fa48fef90))
+* **client-js:** name the audio level callbacks after where the level is measured ([4c513bc](https://github.com/0xBEEBAD/rtvi-client-web/commit/4c513bc21cc793839fc011455b2f5a25698e49c4))
+* **client-js:** rename TextType to BotOutputType ([60551f7](https://github.com/0xBEEBAD/rtvi-client-web/commit/60551f7db676e9d47fe1536b62b2c0d574cf3d8c))
+* **client-js:** report expressive conversation's tones and expressions (RTVI 2.3.0) ([350741a](https://github.com/0xBEEBAD/rtvi-client-web/commit/350741a90938b492392bd23e89293049e1febe03))
+* **client-js:** report flow-node-entered (RTVI 2.4.0) ([d06b565](https://github.com/0xBEEBAD/rtvi-client-web/commit/d06b565a20c974e7f0411677071b8d5edba4d24e))
+* **client-js:** report the audio levels the bot measures ([705006d](https://github.com/0xBEEBAD/rtvi-client-web/commit/705006de35cf31375427a3b635985dba536f8ed7))
+* **client-js:** report the bot's system logs ([c724610](https://github.com/0xBEEBAD/rtvi-client-web/commit/c724610ba9fa1d5228bf011204002bbb9287f958))
+* **client-js:** report the bot's voice activity ([942158b](https://github.com/0xBEEBAD/rtvi-client-web/commit/942158b058db4c94308d08a431eeba55a0669d8c))
+* **client-js:** report the marker in the bot's LLM responses ([8453d1a](https://github.com/0xBEEBAD/rtvi-client-web/commit/8453d1ae616297801a1d4ea1f5c4b9314ce67b32))
+* **client-js:** speak RTVI 2.4.0 from its protocol document ([6b6d23b](https://github.com/0xBEEBAD/rtvi-client-web/commit/6b6d23b3f4236a4daaefc357d1c0babc66681967))
+* **client-js:** sync the RTVI document from Pipecat on GitHub ([2def7b9](https://github.com/0xBEEBAD/rtvi-client-web/commit/2def7b9bf003df8ad3f0e530c2913e89012d49f3))
+* **client-js:** type every metric the RTVI server reports ([80c1980](https://github.com/0xBEEBAD/rtvi-client-web/commit/80c19808528d01bbaaf2620484c662f648b09314))
+* **client-js:** type the diarization speaker on user-input and stt-raw-text ([71f0366](https://github.com/0xBEEBAD/rtvi-client-web/commit/71f03662226b0ce0a4b62b86e313b17c377d22e0))
+* **client-js:** type user-input perception ([49153eb](https://github.com/0xBEEBAD/rtvi-client-web/commit/49153eb3b5c225cde1d09cd12a495d85d686b6cb))
+* **client-js:** warn when deprecated callbacks are used ([4478064](https://github.com/0xBEEBAD/rtvi-client-web/commit/44780649396da8a4fe21f0c7b8227aa082bc748f))
+* **js:** accept DTMF key sequences in sendDTMF ([5c5ce54](https://github.com/0xBEEBAD/rtvi-client-web/commit/5c5ce54f74a7f5426ab7df868704e70996941aac))
+* **js:** add MediaState lifecycle on PipecatClient ([09cf915](https://github.com/0xBEEBAD/rtvi-client-web/commit/09cf915db7138b54e56c6145258b7f797b72c3a8))
+* **js:** add MediaState lifecycle on PipecatClient ([793e162](https://github.com/0xBEEBAD/rtvi-client-web/commit/793e1625efe40ea6e37199e6212f978810caa93b))
+* **js:** add sendDTMF method and DTMFButton type ([47ad59a](https://github.com/0xBEEBAD/rtvi-client-web/commit/47ad59a6ce9b36524a12907eaee1214897a5a2d2))
+* **js:** add support for bot-output-progress events ([34078b9](https://github.com/0xBEEBAD/rtvi-client-web/commit/34078b948e35243be283fce41685dc0dcc31f3c1))
+* **js:** Added support for new RTVI send-file feature ([11ada06](https://github.com/0xBEEBAD/rtvi-client-web/commit/11ada06d71f7f201be669ce8f785e3e928a104f8))
+* **js:** bump RTVI protocol version to 1.4.0 ([b353c0e](https://github.com/0xBEEBAD/rtvi-client-web/commit/b353c0e687ce91d5af031373c6b51fa576d52411))
+* **js:** bump RTVI protocol version to 1.4.0 ([e5d2568](https://github.com/0xBEEBAD/rtvi-client-web/commit/e5d256815eb69c5bef76d3d7fa8865b8dab42733))
+* **js:** bump RTVI_PROTOCOL_VERSION to 1.3.0 for UI Agent Protocol ([98f3e7b](https://github.com/0xBEEBAD/rtvi-client-web/commit/98f3e7bb29729dd16af21b75b872cf7c910f2529))
+* **js:** capture text selection and promote &lt;p&gt; to a refed paragraph ([94fb746](https://github.com/0xBEEBAD/rtvi-client-web/commit/94fb74621f0c55ff92a4fec6ce4a6c0f190e1c1d))
+* **js:** disconnect the client when the bot disconnects, but give the option to stay connected ([2f6fbdb](https://github.com/0xBEEBAD/rtvi-client-web/commit/2f6fbdbdd44e01faa80f11d70c93e73b41cf3ad7))
+* **js:** expose findRefForElement on a11y walker for element-to-ref lookup ([47c6d6d](https://github.com/0xBEEBAD/rtvi-client-web/commit/47c6d6d78c491f73f63f665de254342e889e5af4))
+* **js:** new callback for handling unsupported features ([3f38460](https://github.com/0xBEEBAD/rtvi-client-web/commit/3f384604a1c3e5d38ba991319df6406a3b044850))
+* **js:** rename UI agent -&gt; worker; UIAgent -&gt; UIWorker ([4a232a0](https://github.com/0xBEEBAD/rtvi-client-web/commit/4a232a0ae95e30d9f9917fb4b82e4aafa346eb56))
+* **js:** rename UI task protocol to job-group ([de1f3b3](https://github.com/0xBEEBAD/rtvi-client-web/commit/de1f3b336b09e7f7ebc9e7d7dbb6def9c72c1426))
+* **js:** walker uses option text for select values and emits options as children ([a9a08d0](https://github.com/0xBEEBAD/rtvi-client-web/commit/a9a08d09b5383a51acc97b1c02bb19c2b68ad2b0))
+* promote UI Agent Protocol to first-class RTVI message types ([39c2593](https://github.com/0xBEEBAD/rtvi-client-web/commit/39c259367bce11d4d6fb534979e4461e0c9ff92b))
+
+
+### Bug Fixes
+
+* add exports map for proper ESM/CJS resolution ([a66617b](https://github.com/0xBEEBAD/rtvi-client-web/commit/a66617b9f8f0b9198a2a25d6540e789baf5e2b03))
+* add exports map for proper ESM/CJS resolution ([e6b6ef2](https://github.com/0xBEEBAD/rtvi-client-web/commit/e6b6ef2b15103a9f9762f94d0d221b83a407bc0c)), closes [#114](https://github.com/0xBEEBAD/rtvi-client-web/issues/114)
+* **client-js:** align ErrorData with server payload ([6d4907f](https://github.com/0xBEEBAD/rtvi-client-web/commit/6d4907f8c0a49808504e2d87ff509618ded19385))
+* **client-js:** align ErrorData with server payload ([8495644](https://github.com/0xBEEBAD/rtvi-client-web/commit/8495644981b8d026628c8a3fe89bfb9c5c9ac523))
+* **client-js:** clear the bot's capabilities when the connection drops ([7cfee05](https://github.com/0xBEEBAD/rtvi-client-web/commit/7cfee05796bd3f6451d28ae072e8de64aa515fdb))
+* **client-js:** make UICommandData's payload optional ([94dd608](https://github.com/0xBEEBAD/rtvi-client-web/commit/94dd60823089b5c85178497f25d16b02c56d92c7))
+* **client-js:** only warn on deprecated onBotTranscript when subscribed ([c4c7390](https://github.com/0xBEEBAD/rtvi-client-web/commit/c4c7390407548951645029744e04d634390bfe2b))
+* **client-js:** reject pending requests on disconnect ([1625ed7](https://github.com/0xBEEBAD/rtvi-client-web/commit/1625ed7bbaf679cc817bd17f718c398ecbbdddd0))
+* **client-js:** reject pending requests on disconnect ([6261ad1](https://github.com/0xBEEBAD/rtvi-client-web/commit/6261ad1c50d2b89e944850648e5a34f1d3e95b1e))
+* **client-js:** report a null delivery on disconnect ([31332bb](https://github.com/0xBEEBAD/rtvi-client-web/commit/31332bbcd2aa7ece56c4646c94b2a22ef7a9e014))
+* **client-js:** report a null delivery when the bot leaves ([907e02c](https://github.com/0xBEEBAD/rtvi-client-web/commit/907e02c096770aa4aab7316ddb168cc552ed9887))
+* **client-react:** mark sent text failed only when it can't be sent ([ec0dbdb](https://github.com/0xBEEBAD/rtvi-client-web/commit/ec0dbdb81a9438b27288accecd0fac7c2559b82d))
+* **js:** bump uuid to ^11.1.1 to patch GHSA-w5hq-g745-h8pq ([c4f9108](https://github.com/0xBEEBAD/rtvi-client-web/commit/c4f9108c43cd0fbf0260f93007360f0305ce8881))
+* **js:** only warn on deprecated onBotTranscript when subscribed ([0df6ffc](https://github.com/0xBEEBAD/rtvi-client-web/commit/0df6ffcfbd8826ea640269a212f43b794e244151))
+* **js:** refresh snapshot when native form controls change ([56fa3c5](https://github.com/0xBEEBAD/rtvi-client-web/commit/56fa3c531be29d085f5585f622b2eb2cb7d56097))
+* **js:** refresh snapshot when native form controls change ([f09e1be](https://github.com/0xBEEBAD/rtvi-client-web/commit/f09e1beb4729c1a581623a0e88650aa19251e5de))
+* **js:** resolve open Dependabot dependency vulnerabilities ([61ae50c](https://github.com/0xBEEBAD/rtvi-client-web/commit/61ae50cdcf5de459d7de99ba609ad9388652e0bb))
+* respect final flag in mergeMessages and handle user-llm-text event ([bed406f](https://github.com/0xBEEBAD/rtvi-client-web/commit/bed406f679faa7428d7d93780db877c17cd0bdb8))
+* respect final flag in mergeMessages and handle user-llm-text event ([6119ada](https://github.com/0xBEEBAD/rtvi-client-web/commit/6119adac15805c28bac22f8594018e1867930a95))
+
+
+### Miscellaneous Chores
+
+* **js:** force release 1.12.0 for RTVI protocol 2.0.0 ([#215](https://github.com/0xBEEBAD/rtvi-client-web/issues/215)) ([#229](https://github.com/0xBEEBAD/rtvi-client-web/issues/229)) ([b966fe3](https://github.com/0xBEEBAD/rtvi-client-web/commit/b966fe385b65938265e3410fd8d04f4cd10f5d36))
+
 ## [1.18.0](https://github.com/pipecat-ai/pipecat-client-web/compare/client-js-v1.17.0...client-js-v1.18.0) (2026-11-25)
 
 
